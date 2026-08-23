@@ -3,15 +3,28 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "start": "bun src/server.ts",
+    "check-types": "tsc --noEmit"
+  },
   "devDependencies": {
     "@types/bun": "latest",
-    "@repo/types": "*"
+    "@repo/types": "*",
+    "@repo/db": "*"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "@huggingface/inference": "^4.13.28",
+    "@types/bcrypt": "^6.0.0",
+    "@types/dotenv": "^8.2.3",
     "@types/express": "^5.0.6",
-    "express": "^5.2.1"
+    "@types/jsonwebtoken": "^9.0.10",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3"
   }
 }

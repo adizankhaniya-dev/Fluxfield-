@@ -1,6 +1,9 @@
 {
-  "name": "db",
-  "module": "index.ts",
+  "name": "@repo/db",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "type": "module",
   "private": true,
   "devDependencies": {
